@@ -1,39 +1,39 @@
-#1 /n SELECT titre AS 'Titres films' FROM `film` WHERE genre_id IN (1,2,3) AND LOWER(titre) LIKE '%e'
+#1 SELECT `titre` AS 'Titres films' FROM `film` WHERE genre_id IN (1,2,3) AND LOWER(titre) LIKE '%e'
 
-#2 /n SELECT `titre`,`resum`,`duree_min` FROM `film`
+#2 SELECT `titre`,`resum`,`duree_min` FROM `film`
 
-#3 /n 
+#3 SELECT LOWER(titre) FROM `film`
 
-#4 /n 
+#4 
 
-#5 /n 
+#5 
 
-#6 /n 
+#6 
 
-#7 /n 
+#7 
 
-#8 /n 
+#8 
 
-#9 /n 
+#9 
 
-#10 /n 
+#10 
 
-#11 /n 
+#11 
 
-#12 /n 
+#12 
 
-#13 /n 
+#13 
 
-#14 /n 
+#14 
 
-#15 /n 
+#15 
 
-#16 /n 
+#16 
 
-#17 /n 
+#17 
 
-#18 /n 
+#18 
 
-#19 /n 
+#19 
 
-#20 /n 
+#20 
