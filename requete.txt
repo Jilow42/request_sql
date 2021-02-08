@@ -12,7 +12,7 @@
 
 #7 SELECT `titre` FROM `film` WHERE LOWER(titre) LIKE '%the%' AND genre_id IN (2)
 
-#8 SELECT `titre`,`date_debut_affiche` AS 'date_debut', `distrib_id`, distrib.nom AS 'nom_distrib' FROM `film`, `distrib` WHERE distrib.nom IS NOT NULL AND LOWER(titre) LIKE '%day%' ORDER BY date_debut_affiche ASC
+#8 SELECT `titre`,`date_debut_affiche` AS 'date_debut', `distrib_id`, distrib.nom AS 'nom_distrib' FROM `film`, `distrib` WHERE distrib_id IS NOT NULL AND LOWER(titre) LIKE '%day%' ORDER BY date_debut_affiche DESC
 
 #9 
 
