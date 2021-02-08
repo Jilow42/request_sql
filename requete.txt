@@ -2,13 +2,13 @@
 
 #2 SELECT `titre`,`resum`,`duree_min` FROM `film`
 
-#3 SELECT LOWER(titre) FROM `film`
+#3 SELECT LOWER(titre) AS 'titres_min' FROM `film` WHERE id BETWEEN '43' AND '83'
 
-#4 
+#4 SELECT UPPER(titre),`date_fin_affiche` FROM   ORDER BY date_fin_affiche DESC
 
-#5 
+#5 SELECT sha1(titre) AS 'Titres_SHA1', MD5(title) AS 'Titres_MD5' FROM `film`
 
-#6 
+#6  
 
 #7 
 
