@@ -8,7 +8,7 @@
 
 #5 SELECT sha1(titre) AS 'Titres_SHA1', MD5(title) AS 'Titres_MD5' FROM `film`
 
-#6  
+#6  SELECT COUNT(titre) AS'nombre_films' FROM `film` WHERE LOWER(title) LIKE 'B%'
 
 #7 
 
