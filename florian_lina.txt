@@ -37,4 +37,4 @@
 
 #19 SELECT UPPER(nom) AS `nom_distrib`, COUNT(film.distrib_id) AS `nombre_films`, SUM(film.duree_min) FROM distrib JOIN film ON distrib.id = film.distrib_id GROUP BY distrib.nom ORDER BY COUNT(film.distrib_id) DESC, SUM(film.duree_min) DESC
 
-#20 
+#20 SELECT CONCAT(UCASE(MID(nom,1,1)),MID(nom,2)) AS nom,CONCAT(UCASE(MID(prenom,1,1)),MID(prenom,2)) AS prenom,COUNT(historique_membre.membre_id) AS nombre_film,membre.date_dernier_film AS date_dernier_film,film.titre AS nom_dernier_film FROM fiche_personne JOIN membre ON fiche_personne.id = membre.fiche_perso_id JOIN historique_membre ON fiche_personne.id = historique_membre.membre_id JOIN film ON membre.dernier_film_id = film.id WHERE historique_membre.membre_id IS NOT NULL GROUP BY nom ORDER BY nombre_film DESC
