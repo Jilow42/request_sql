@@ -35,6 +35,6 @@
 #18 SELECT id, titre, resum FROM film WHERE id = 42
 /*La requete WHERE est la plus optimisé pour ce cas de figure car on demande un résultat sur une seul ligne, HAVING EST a privilégier pour des résultats sur plusieurs ligne. D'autre part la requete WHERE à pris 0.0009s et celle du HAVING 0.0020s.*/
 
-#19 SELECT UPPER(nom) AS `nom_distrib`, COUNT(film.distrib_id) AS `nombre_films`, SUM(film.duree_min) FROM distrib JOIN film ON distrib.id = film.distrib_id ORDER BY COUNT(film.distrib_id) AND SUM(film.duree_min) DESC GROUP BY distrib.nom
+#19 SELECT UPPER(nom) AS `nom_distrib`, COUNT(film.distrib_id) AS `nombre_films`, SUM(film.duree_min) FROM distrib JOIN film ON distrib.id = film.distrib_id GROUP BY distrib.nom ORDER BY COUNT(film.distrib_id) AND SUM(film.duree_min) DESC
 
 #20 
